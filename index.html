@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <title>電卓アプリ</title>
+    <style>
+        #formula {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text-center mb-5">電卓アプリ</h1>
+    <section class="container">
+        <div class="border rounded mb-3">
+            <p id="ans" class="text-right mb-0 lead">Ans = 0</p>
+            <p id="formula" class="text-right mb-0 display-4"></p>
+        </div>
+        <div class="row text-center mb-3">
+            <div class="col-3">
+                <div class="btn btn-primary w-100" onclick="myDate('(')">(</div>
+            </div>
+            <div class="col-3">
+                <div class="btn btn-primary w-100" onclick="myDate(')')">)</div>
+            </div>
+            <div class="col-3">
+                <div class="btn btn-primary w-100" onclick="myDate('%')">%</div>
+            </div>
+            <div class="col-3">
+                <div class="btn btn-primary w-100" onclick="myDate('AC')">AC</div>
+            </div>
+        </div>
+        <div class="row text-center my-3">
+            <div class="col-3">
+                <div class="btn btn-primary w-100" onclick="myDate(7)">7</div>
+            </div>
+            <div class="col-3">
+                <div class="btn btn-primary w-100" onclick="myDate(8)">8</div>
+            </div>
+            <div class="col-3">
+                <div class="btn btn-primary w-100" onclick="myDate(9)">9</div>
+            </div>
+            <div class="col-3">
+                <div class="btn btn-primary w-100" onclick="myDate('/')">÷</div>
+            </div>
+        </div>
+        <div class="row text-center my-3">
+            <div class="col-3">
+                <div class="btn btn-primary w-100" onclick="myDate(4)">4</div>
+            </div>
+            <div class="col-3">
+                <div class="btn btn-primary w-100" onclick="myDate(5)">5</div>
+            </div>
+            <div class="col-3">
+                <div class="btn btn-primary w-100" onclick="myDate(6)">6</div>
+            </div>
+            <div class="col-3">
+                <div class="btn btn-primary w-100" onclick="myDate('*')">×</div>
+            </div>
+        </div>
+        <div class="row text-center my-3">
+            <div class="col-3">
+                <div class="btn btn-primary w-100" onclick="myDate(1)">1</div>
+            </div>
+            <div class="col-3">
+                <div class="btn btn-primary w-100" onclick="myDate(2)">2</div>
+            </div>
+            <div class="col-3">
+                <div class="btn btn-primary w-100" onclick="myDate(3)">3</div>
+            </div>
+            <div class="col-3">
+                <div class="btn btn-primary w-100" onclick="myDate('-')">-</div>
+            </div>
+        </div>
+        <div class="row text-center my-3">
+            <div class="col-3">
+                <div class="btn btn-primary w-100" onclick="myDate(0)">0</div>
+            </div>
+            <div class="col-3">
+                <div class="btn btn-primary w-100" onclick="myDate('.')">.</div>
+            </div>
+            <div class="col-3">
+                <div class="btn btn-primary w-100" onclick="myDate('=')">=</div>
+            </div>
+            <div class="col-3">
+                <div class="btn btn-primary w-100" onclick="myDate('+')">+</div>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
